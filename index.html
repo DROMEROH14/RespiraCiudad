@@ -24,7 +24,7 @@
         .container {
             max-width: 1200px;
             width: 100%;
-            text-align: center;
+            text-align: center; /* Centrar todo el contenido del contenedor principal */
         }
 
         .header {
@@ -49,32 +49,10 @@
             margin-right: auto;
         }
 
-        .problem-section {
-            margin-top: 40px;
-            text-align: left;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .problem-title {
-            color: #333;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .problem-text {
-            color: #555;
-            font-size: 1rem;
-            line-height: 1.7;
-            margin-bottom: 30px;
-            text-align: justify;
-        }
-
         .dashboard-button-container {
             text-align: center;
-            margin: 30px 0;
+            margin-top: 30px; /* Separación encima del botón */
+            margin-bottom: 40px; /* Separación debajo del botón, si hay más contenido */
         }
 
         .dashboard-button {
@@ -103,12 +81,13 @@
             box-shadow: 0 8px 32px rgba(0,0,0,0.1);
             padding: 20px;
             margin: 0 auto;
-            max-width: 1180px;
+            max-width: 1180px; /* Mantener este para un tamaño máximo */
+            width: 95%; /* Ajuste para que ocupe más espacio si es posible */
         }
 
         .dashboard-iframe {
             width: 100%;
-            height: 541px;
+            height: 700px; /* Aumentar la altura del iframe para una visualización más grande */
             border: none;
             border-radius: 8px;
         }
@@ -124,10 +103,11 @@
             
             .dashboard-container {
                 padding: 15px;
+                width: 100%; /* Asegurar que ocupe todo el ancho disponible en móviles */
             }
             
             .dashboard-iframe {
-                height: 400px;
+                height: 500px; /* Ajustar la altura en tablets */
             }
         }
 
@@ -137,7 +117,7 @@
             }
             
             .dashboard-iframe {
-                height: 300px;
+                height: 400px; /* Ajustar la altura en móviles pequeños */
             }
         }
     </style>
@@ -150,32 +130,18 @@
                 Monitoreo inteligente de la calidad del aire, el tráfico<br>
                 y su impacto en la salud
             </p>
-            
-            <div class="problem-section">
-                <h2 class="problem-title"><strong>Problema:</strong></h2>
-                <p class="problem-text">
-                    La calidad del aire en muchas regiones de Colombia ha alcanzado niveles preocupantes, especialmente en zonas urbanas con alta densidad vehicular. Estos niveles de contaminación tienen una <strong>relación directa con el aumento de enfermedades respiratorias</strong> como asma, EPOC, infecciones respiratorias agudas (IRA), entre otras.
-                    <br><br>
-                    Actualmente, <strong>los datos están dispersos</strong>, no se correlacionan en tiempo real y <strong>no permiten una acción preventiva eficiente</strong> por parte de los gobiernos locales o entidades de salud pública. No hay una herramienta clara que relacione el tráfico, la contaminación y las enfermedades de forma visual, integrada y comprensible.
-                </p>
-                
-                <div class="dashboard-button-container">
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNWZiOTAxZTAtOGNmOC00OTVkLTgzMDUtZGU2OWM0NGIxYWQ3IiwidCI6IjA3ZGE2N2EwLTFmNDMtNGU4Yy05NzdmLTVmODhiNjQ3MGVlNiIsImMiOjR9" 
-                       target="_blank" 
-                       class="dashboard-button">
-                        🔗 Ver Dashboard de RESPIRA CIUDAD
-                    </a>
-                </div>
-            </div>
         </div>
         
         <div class="dashboard-container">
-            <div class="error-message">
-                <h3 style="color: #e74c3c; margin-bottom: 15px;">David Santiago Romero Hidalgo</h3>
-                <p style="color: #666; margin-bottom: 20px;">
-                    
-                </p>
-            </div>
+            <iframe title="Proyecto Big Data" class="dashboard-iframe" src="https://app.powerbi.com/view?r=eyJrIjoiNWZiOTAxZTAtOGNmOC00OTVkLTgzMDUtZGU2OWM0NGIxYWQ3IiwidCI6IjA3ZGE2N2EwLTFmNDMtNGU4Yy05NzdmLTVmODhiNjQ3MGVlNiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+
+        <div class="dashboard-button-container">
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNWZiOTAxZTAtOGNmOC00OTVkLTgzMDUtZGU2OWM0NGIxYWQ3IiwidCI6IjA3ZGE2N2EwLTFmNDMtNGU4Yy05NzdmLTVmODhiNjQ3MGVlNiIsImMiOjR9" 
+                target="_blank" 
+                class="dashboard-button">
+                🔗 Ver Dashboard de RESPIRA CIUDAD
+            </a>
         </div>
     </div>
 </body>
