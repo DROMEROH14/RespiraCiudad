@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPIRA CIUDAD - Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F8F8F8;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .title {
+            color: #F5A614;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            color: #333;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .problem-section {
+            margin-top: 40px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .problem-title {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .problem-text {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .dashboard-button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .dashboard-button {
+            color: #F5A614;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            padding: 15px 30px;
+            border: 2px solid #F5A614;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: white;
+            box-shadow: 0 4px 15px rgba(245, 166, 20, 0.2);
+        }
+
+        .dashboard-button:hover {
+            background: #F5A614;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 166, 20, 0.3);
+        }
+
+        .dashboard-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1180px;
+        }
+
+        .dashboard-iframe {
+            width: 100%;
+            height: 541px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .dashboard-container {
+                padding: 15px;
+            }
+            
+            .dashboard-iframe {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.5rem;
+            }
+            
+            .dashboard-iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">RESPIRA CIUDAD</h1>
+            <p class="subtitle">
+                Monitoreo inteligente de la calidad del aire, el tráfico<br>
+                y su impacto en la salud
+            </p>
+            
+            <div class="problem-section">
+                <h2 class="problem-title"><strong>Problema:</strong></h2>
+                <p class="problem-text">
+                    La calidad del aire en muchas regiones de Colombia ha alcanzado niveles preocupantes, especialmente en zonas urbanas con alta densidad vehicular. Estos niveles de contaminación tienen una <strong>relación directa con el aumento de enfermedades respiratorias</strong> como asma, EPOC, infecciones respiratorias agudas (IRA), entre otras.
+                    <br><br>
+                    Actualmente, <strong>los datos están dispersos</strong>, no se correlacionan en tiempo real y <strong>no permiten una acción preventiva eficiente</strong> por parte de los gobiernos locales o entidades de salud pública. No hay una herramienta clara que relacione el tráfico, la contaminación y las enfermedades de forma visual, integrada y comprensible.
+                </p>
+                
+                <div class="dashboard-button-container">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNWZiOTAxZTAtOGNmOC00OTVkLTgzMDUtZGU2OWM0NGIxYWQ3IiwidCI6IjA3ZGE2N2EwLTFmNDMtNGU4Yy05NzdmLTVmODhiNjQ3MGVlNiIsImMiOjR9" 
+                       target="_blank" 
+                       class="dashboard-button">
+                        🔗 Ver Dashboard de RESPIRA CIUDAD
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dashboard-container">
+            <div class="error-message">
+                <h3 style="color: #e74c3c; margin-bottom: 15px;">David Santiago Romero Hidalgo</h3>
+                <p style="color: #666; margin-bottom: 20px;">
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
